@@ -26,3 +26,6 @@ steps:
     pathToPublish: '$(build.artifactStagingDirectory)'
     artifactName: 'drop'
     artifactType: 'container'
+- task: Bash@3
+  inputs:
+    script: find . -name "*.apk"
